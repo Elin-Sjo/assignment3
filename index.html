@@ -1,0 +1,42 @@
+<table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backbone.js • TodoMVC</title>
+    <link rel="stylesheet" href="assignment3.css">
+    <script src="assignment3.js" type="module" defer></script>
+</head>
+<body> 
+    <h1>todos</h1>
+      <table id="myTable">
+        <tr>
+          <form>
+            <th colspan="1"><button id= "markAll" style= "display:none"type="button">▼</button></th>
+            <!-- måste vara text type för att bli av med krysset  -->
+            <th colspan="6"><input autocomplete="off" type="text" name="inputTodo" id="inputTodo" placeholder="What needs to be done?"></th>
+          </form>
+        </tr>
+
+        <tr id= "bottomTable" style= "display:none">
+            <td colspan="2"id= "itemsLeft">items left</td>
+            <!-- ökade span för att de skulle hamna rätt -->
+            <td colspan="3"><button id= "showAll" type="button">All</button>
+              <button id= "showActive"  type="button">Active</button>
+              <button id= "showCompleted"  type="button">Completed</button>
+            </td>
+            <!-- minskade span för att den ska hamna längst till höger -->
+            <td colspan="2"><button id= "clearCompleted" type="button" style= "display:none">Clear Completed</button></td>
+          </tr>
+      </table>
+
+    <footer>
+      <p>Written by <a href="https://github.com/nord95">Anton Nord</a>
+        and <a href="https://github.com/Elin-Sjo">Elin Sjöström</a></p>
+      <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+
+</body>
+</html>
